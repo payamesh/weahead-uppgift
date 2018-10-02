@@ -1,0 +1,145 @@
+body {
+    background-color: #ededed;
+}
+
+header {
+    background-color: white;
+}
+
+hr {
+    border: none;
+    height: 20px;
+    width: 90%;
+    height: 50px;
+    margin-top: 0;
+    border-bottom: 0.5px solid #1f1209;
+    box-shadow: 0 10px 10px -10px #333;
+    margin: -50px auto 10px;
+}
+
+.nav {
+    display: grid;
+    grid-gap: 20px;
+    border-width: 1px 0;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.nav li {
+    display: inline;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: 10px;
+    color: gray;
+}
+
+.nav-header {
+    text-align: center;
+    display: grid;
+}
+
+.timer {
+    font-style: italic;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 20px;
+    width: 100%;
+    /*align-items: stretch;
+    display: flex;
+    flex-flow: space-between;
+    margin-right: 4rem;
+    
+    margin-left: 4rem;
+    
+    max-width: 960px;
+    
+    padding-right: 10px;
+    
+    padding-left: 10px;
+    */
+}
+
+.ruta1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    padding-left: 15px;
+    box-shadow: 6px 10px 5px 0px rgba(191, 181, 191, 1);
+    overflow: hidden;
+    background-color: white;
+    padding: 5px 8px;
+    border-radius: 3px;
+}
+
+.ruta2 {
+    box-shadow: 6px 10px 5px 0px rgba(191, 181, 191, 1);
+    overflow: hidden;
+    background-color: blue;
+    padding: 5px 8px;
+    height: 10rem;
+    width: 40%;
+    border-radius: 2px;
+    align-items: right;
+    margin: auto;
+}
+
+.ruta3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    box-shadow: 6px 10px 5px 0px rgba(191, 181, 191, 1);
+    ;
+    overflow: hidden;
+    background-color: white;
+    padding: 5px 8px;
+    height: 10rem;
+    width: 90%;
+}
+
+.help {
+    color: white;
+    position: fixed;
+    bottom: 5%;
+    right: 10%;
+    width: 6rem;
+    height: 3rem;
+    border-radius: 4px;
+    background-color: blue;
+}
+
+.rutor {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas: 'ruta1 ruta1 ruta 2' 'ruta3 ruta3 ruta3';
+}
+
+.rutholder {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    padding: 1.5rem;
+}
+
+@media(max-width: 700px) {}
